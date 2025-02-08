@@ -17,21 +17,24 @@ function App() {
   }, []);
 
   return (
-    <div>
-      <h1>Registered Users</h1>
-      <table border="1" style={{ width: "100%", textAlign: "left" }}>
+    <div className="container">
+      <section className="title">
+        <h1>Registered Users</h1>
+        <span><a className="link" href="http://localhost:8080/register">Crate account</a></span>
+      </section>
+      
+      <table>
         <thead>
           <tr>
-            <th>ID</th>
             <th>Firstname</th>
             <th>Lastname</th>
             <th>Email</th>
           </tr>
         </thead>
         <tbody>
-          {users.map((user) => (
+          {users.map((user) => 
+          (
             <tr key={user.id}>
-              <td>{user.id}</td>
               <td>{user.firstname}</td>
               <td>{user.lastname}</td>
               <td>{user.email}</td>
