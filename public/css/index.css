@@ -24,7 +24,7 @@ body {
     width: 135px;
   }
 
-  .link{
+  .logout-btn{
     position: absolute;
     right: 25px;
     font-family: Arial, sans-serif;
@@ -32,7 +32,15 @@ body {
     font-size: 20px;
     font-weight: 600;
     text-decoration: none;
+    background-color: #1a4966;
+    border-radius: 20px;
+    padding: 10px;
+    border: black;
   }
+
+  .logout-btn:hover {
+    background: rgb(60, 105, 133);
+}
   
   .table-container{
     width: 90%; 
@@ -69,4 +77,54 @@ tr:hover {
     background-color: #e0e0e0;
     transition: background 0.3s;
 }
-  
+
+.form-container {
+    width: 90%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    color: #1a4966;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background: #1a4966;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-btn:hover {
+    background: #5595bd;
+}
